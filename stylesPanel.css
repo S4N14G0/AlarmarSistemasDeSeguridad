@@ -1330,6 +1330,16 @@ width: 28vw;
     border-radius: 2vw;
 }
 
+
+
+#CuadroM{
+    transform: translate(41vw,-12vw);
+    width: 30vw;
+    height: 10vw;
+    border-radius: 2vw;
+}
+
+
 #Magnetico{
     width: 13vw;
     transform: translate(27vw,1vw);
