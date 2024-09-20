@@ -1108,6 +1108,14 @@ width: 50vw;
     background-color: rgba(39, 39, 39, 0.8);
 }
 
+#Cuadro7{
+    transform: translate(35vw,-33vw);
+    width: 60vw;
+    height: 43vw;
+    border-radius: 2vw;
+    background-color: rgba(39, 39, 39, 0.8);
+}
+
 #Cuadro8{
     transform: translate(35vw,-70vw);
     width: 60vw;
