@@ -112,51 +112,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var botones = document.querySelectorAll('#INICIO, #quienessomos, #nuestrosServicios, #empresasConfian, #contactos');
-    var secciones = document.querySelectorAll('#portada1, #Seccion2, #Seccion3, #Seccion4, #Seccion5');
-  
-    // Función para verificar la sección visible y actualizar los estilos de los botones
-    function actualizarBotones() {
-           secciones.forEach(function(seccion) {
-        var idSeccion = seccion.getAttribute('id');
-        var botonCorrespondiente = document.querySelector('[href="#' + idSeccion + '"]');
-  
-        if (seccion.getBoundingClientRect().top < window.innerHeight / 1 && seccion.getBoundingClientRect().bottom > window.innerHeight / 1) {
-          botones.forEach(function(boton) {
-            boton.classList.remove('active');
-          });
-          
-        }
-      });
-    }
-  
-    // Escucha el evento scroll para actualizar los botones
-    window.addEventListener('scroll', actualizarBotones);
-  
-    // Actualiza los botones cuando la página se carga por primera vez
-    actualizarBotones();
-  });
-
-
-botones.forEach(function(boton) {
-  boton.addEventListener('click', function(event) {
-      event.preventDefault(); // Evitar el comportamiento por defecto del enlace
-      var destino = document.querySelector(this.getAttribute('href'));
-      if (destino) {
-          destino.scrollIntoView({ behavior: 'smooth' }); // Desplazamiento suave hacia la sección
-      }
-  });
-});
-
-// Escucha el evento de desplazamiento para actualizar los botones
-window.addEventListener('scroll', actualizarBotones);
-
-// Actualiza los botones al cargar la página
-actualizarBotones();
-
-
 function mostrarPanel(numeroPanel) {
   // Obtener todos los paneles
   var paneles = document.querySelectorAll('.Capa1, .Capa2, .Capa3, .Capa31, .Capa32, .Capa33');
