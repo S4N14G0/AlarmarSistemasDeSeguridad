@@ -812,6 +812,7 @@ body::-webkit-scrollbar{
 
 
 #LogoContacto{
+    width: 14vw;
     text-shadow: 2.5px 3px 0 #ffffff;
     left: 5.4vw;
 }
